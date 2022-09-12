@@ -1,0 +1,6 @@
+{
+  "dsJWTClientId": //Integration Key for the Application,
+  "impersonatedUserGuid": //userId of Developer Account,
+  "privateKeyLocation": //private key file location downloaded from DocuSign,
+  "dsOauthServer": "https://account-d.docusign.com "//Url of the Authorization Server
+}
