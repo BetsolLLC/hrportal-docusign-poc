@@ -28,9 +28,9 @@ app.get('/sendEmail',(req,res)=>{
                      `scope=${urlScopes}&client_id=${jwtConfig.dsJWTClientId}&` +
                      `redirect_uri=${redirectUri}`;
 
- console.log("Open the following URL in your browser to grant consent to the application:");
- console.log(consentUrl);
- console.log("Consent granted? \n 1)Yes \n 2)No");
+ res.send("Open the following URL in your browser to grant consent to the application:");
+ res.send(consentUrl);
+rres.send("Consent granted? \n 1)Yes \n 2)No");
  let consentGranted = prompt("");
  if(consentGranted == "1"){
    return true;
