@@ -11,7 +11,8 @@ const doc2File = 'form2.pdf';
 const doc3File = 'World_Wide_Corp_lorem.pdf';
 const express=require('express');
 const app=express();
-const url=require('url');
+const url=require('url')
+const port=process.env.PORT || 5000;;
 app.get('/sendEmail',(req,res)=>{
 
 
@@ -128,4 +129,4 @@ async function main(){
 main();
 
 });
-app.listen(3000);
+app.listen(port);

@@ -10,6 +10,7 @@ const { ProvisioningInformation } = require('docusign-esign');
 const express=require('express');
 const app=express();
 const url=require('url');
+const port=process.env.PORT || 5000;
 app.get('/getInD',(req,res)=>{
     const SCOPES = [
         "signature", "impersonation"
@@ -136,4 +137,4 @@ app.get('/getInD',(req,res)=>{
       main();
 
 });
-app.listen(3000);
+app.listen(port);
